@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70DED1D22E643C50029B425 /* DraggableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DED1922E643C50029B425 /* DraggableViewDelegate.swift */; };
+		C70DED1E22E643C50029B425 /* DraggableView+RestingPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DED1A22E643C50029B425 /* DraggableView+RestingPosition.swift */; };
+		C70DED1F22E643C50029B425 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DED1B22E643C50029B425 /* DraggableView.swift */; };
+		C70DED2022E643C50029B425 /* DraggableView+ForcingDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DED1C22E643C50029B425 /* DraggableView+ForcingDirection.swift */; };
 		C7CD707522E639A500D6AE77 /* DraggableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7CD706B22E639A500D6AE77 /* DraggableView.framework */; };
 		C7CD707A22E639A500D6AE77 /* DraggableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CD707922E639A500D6AE77 /* DraggableViewTests.swift */; };
 		C7CD707C22E639A500D6AE77 /* DraggableView.h in Headers */ = {isa = PBXBuildFile; fileRef = C7CD706E22E639A500D6AE77 /* DraggableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C70DED1922E643C50029B425 /* DraggableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableViewDelegate.swift; sourceTree = "<group>"; };
+		C70DED1A22E643C50029B425 /* DraggableView+RestingPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DraggableView+RestingPosition.swift"; sourceTree = "<group>"; };
+		C70DED1B22E643C50029B425 /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
+		C70DED1C22E643C50029B425 /* DraggableView+ForcingDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DraggableView+ForcingDirection.swift"; sourceTree = "<group>"; };
 		C7CD706B22E639A500D6AE77 /* DraggableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DraggableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CD706E22E639A500D6AE77 /* DraggableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DraggableView.h; sourceTree = "<group>"; };
 		C7CD706F22E639A500D6AE77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				C7CD706E22E639A500D6AE77 /* DraggableView.h */,
+				C70DED1B22E643C50029B425 /* DraggableView.swift */,
+				C70DED1C22E643C50029B425 /* DraggableView+ForcingDirection.swift */,
+				C70DED1A22E643C50029B425 /* DraggableView+RestingPosition.swift */,
+				C70DED1922E643C50029B425 /* DraggableViewDelegate.swift */,
 				C7CD706F22E639A500D6AE77 /* Info.plist */,
 			);
 			path = DraggableView;
@@ -199,6 +211,7 @@
 				TargetAttributes = {
 					C7CD706A22E639A500D6AE77 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					C7CD707322E639A500D6AE77 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -260,6 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70DED1F22E643C50029B425 /* DraggableView.swift in Sources */,
+				C70DED1E22E643C50029B425 /* DraggableView+RestingPosition.swift in Sources */,
+				C70DED1D22E643C50029B425 /* DraggableViewDelegate.swift in Sources */,
+				C70DED2022E643C50029B425 /* DraggableView+ForcingDirection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +452,7 @@
 		C7CD708022E639A500D6AE77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -451,6 +469,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = korelhayrullah.DraggableView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,6 +478,7 @@
 		C7CD708122E639A500D6AE77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -483,6 +503,7 @@
 		C7CD708322E639A500D6AE77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DraggableViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,6 +521,7 @@
 		C7CD708422E639A500D6AE77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DraggableViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
