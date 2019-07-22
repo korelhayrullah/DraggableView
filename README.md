@@ -6,6 +6,8 @@ A lightweight draggable view.
 
 ## Example
 
+![Demo](https://github.com/korelhayrullah/DraggableView/blob/master/Demo.gif)
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Installation
