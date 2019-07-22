@@ -21,7 +21,7 @@ pod 'DraggableView'
 
 The usage is simple as creating an instance of a basic UIView :smile:.
 
-```swi
+```swift
 var draggableView = DraggableView()
 
 // The padding value that it will stay far from the edges
