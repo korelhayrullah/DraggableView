@@ -11,7 +11,7 @@ import DraggableView
 
 class ViewController: UIViewController {
   
-  var draggableView = DraggableView()
+  let draggableView = DraggableView()
   
   override func viewDidLoad() {
     super.viewDidLoad()
