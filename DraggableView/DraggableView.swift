@@ -56,7 +56,7 @@ open class DraggableView: UIView {
   weak var delegate: DraggableViewDelegate?
   
   // MARK: -Methods
-  override init(frame: CGRect) {
+  override public init(frame: CGRect) {
     super.init(frame: frame)
     initialize()
   }
