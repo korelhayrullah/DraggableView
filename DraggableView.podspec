@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "DraggableView"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A lightweight draggable view."
   spec.homepage     = "https://github.com/korelhayrullah/DraggableView"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
